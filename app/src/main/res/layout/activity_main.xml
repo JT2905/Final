@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="10:00"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/shot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/shott"
+        android:textColor="#FF0000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view" />
+
+    <TextView
+        android:id="@+id/HalfText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/period"
+        android:textColor="#FF0000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shot" />
+
+    <TextView
+        android:id="@+id/Team1Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="275dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/team1"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Team2Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="275dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/team2"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/t1Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/press_start_2p"
+        android:scaleY="1.5"
+        android:text="@string/team1scoreInitial"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FF0000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Team1Name" />
+
+    <TextView
+        android:id="@+id/t2Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/press_start_2p"
+        android:scaleY="1.5"
+        android:text="@string/team2scoreInitial"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Team2Name" />
+
+    <Button
+        android:id="@+id/t1_1"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="-20dp"
+        android:backgroundTint="@color/white"
+        android:onClick="tOneOne"
+        android:text="@string/oneP"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/t1Score"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/t1_2"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#FFDD00"
+        android:onClick="tOneTwo"
+        android:text="@string/twoP"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1_1"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/t1_P"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#2EFD00"
+        android:onClick="tOneThree"
+        android:text="@string/threeP"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1Score"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/t2_1"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="-20dp"
+        android:backgroundTint="@color/white"
+        android:onClick="tTwoOne"
+        android:text="@string/oneP"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/t2Score" />
+
+    <Button
+        android:id="@+id/t2_2"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#FFDD00"
+        android:onClick="tTwoTwo"
+        android:text="@string/twoP"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/t1_2"
+        app:layout_constraintTop_toBottomOf="@+id/t2_1" />
+
+    <Button
+        android:id="@+id/t2_P"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#2EFD00"
+        android:onClick="tTwoThree"
+        android:text="@string/threeP"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t2Score" />
+
+    <Button
+        android:id="@+id/Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#777777"
+        android:onClick="SettingsClick"
+        android:text="@string/settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sUndo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FF0000"
+        android:onClick="Undo"
+        android:text="@string/undo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1_1" />
+
+    <TextView
+        android:id="@+id/t1S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/TOs"
+        android:textAlignment="textStart"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1_P" />
+
+    <TextView
+        android:id="@+id/t2S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/TOs"
+        android:textAlignment="textStart"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t2_P" />
+
+    <Button
+        android:id="@+id/t1_SW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/press_start_2p"
+        android:onClick="tOneTOs"
+        android:text="@string/ToInitial"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1S"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/t2_SW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/press_start_2p"
+        android:onClick="tTwoTOs"
+        android:text="@string/ToInitial"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t2S" />
+
+    <TextView
+        android:id="@+id/t1G"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/fouls"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1_SW" />
+
+    <TextView
+        android:id="@+id/t2G"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/fouls"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t2_SW" />
+
+    <Button
+        android:id="@+id/t1_GW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/press_start_2p"
+        android:onClick="tOneFs"
+        android:text="@string/FoulInitial"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1G" />
+
+    <Button
+        android:id="@+id/t2_GW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/press_start_2p"
+        android:onClick="tTwoFs"
+        android:text="@string/FoulInitial"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t2G" />
+
+    <Button
+        android:id="@+id/sNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/press_start_2p"
+        android:onClick="perNum"
+        android:text="@string/pNumInitial"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HalfText" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="240dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00511E1E"
+        android:onClick="MtimerClick"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="73dp"
+        android:layout_height="42dp"
+        android:backgroundTint="#00AA2D2D"
+        android:onClick="SHtimerClick"
+        app:layout_constraintBottom_toBottomOf="@+id/shot"
+        app:layout_constraintEnd_toEndOf="@+id/shot"
+        app:layout_constraintStart_toStartOf="@+id/shot"
+        app:layout_constraintTop_toTopOf="@+id/shot" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

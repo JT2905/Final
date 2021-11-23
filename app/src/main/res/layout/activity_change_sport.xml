@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sportgradient"
+    tools:context=".ChangeSport">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="SELECT SPORT"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#FA7500"
+        android:onClick="BkBall"
+        android:text="BASKETBALL"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="BASEBALL"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#CACACA"
+        android:onClick="RL"
+        android:text="RUGBY LEAGUE"
+        android:textColor="#246700"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button13" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#92DA0C"
+        android:onClick="Tns"
+        android:text="TENNIS"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button14" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#BA0000"
+        android:text="CRICKET"
+        android:textColor="#E4BD59"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button15" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#221F1F"
+        android:text="10-PIN BOWLING"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:iconTint="#191818"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="Scr"
+        android:text="SOCCER"
+        android:textColor="#010C61"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button12" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="282dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#9A0000"
+        android:rotation="-11"
+        android:rotationX="-2"
+        android:rotationY="19"
+        android:text="COMING SOON"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="282dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#9A0000"
+        android:rotation="-11"
+        android:rotationX="-2"
+        android:rotationY="19"
+        android:text="COMING SOON"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
+
+    <Button
+        android:id="@+id/button26"
+        android:layout_width="282dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#9A0000"
+        android:rotation="-11"
+        android:rotationX="-2"
+        android:rotationY="19"
+        android:text="COMING SOON"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

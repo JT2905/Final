@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
+    tools:context=".Bowling">
+
+    <TextView
+        android:id="@+id/FrameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="FRAME"
+        android:textColor="#FF0000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/pNumInitial"
+        android:textColor="#FF0000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FrameText" />
+
+    <TextView
+        android:id="@+id/Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/press_start_2p"
+        android:scaleY="1.5"
+        android:text="0"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FF0000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fNum" />
+
+    <Button
+        android:id="@+id/pin1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="-75dp"
+        android:background="@drawable/pinstate"
+        android:text="@string/Empty"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Score"
+        app:strokeColor="#616161"
+        app:strokeWidth="5dp" />
+
+    <Button
+        android:id="@+id/pin5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="185dp"
+        android:background="@drawable/pinstate"
+        android:text="@string/Empty"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Score"
+        app:strokeColor="#616161"
+        app:strokeWidth="5dp" />
+
+    <Button
+        android:id="@+id/pin6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="185dp"
+        android:background="@drawable/pinstate"
+        android:text="@string/Empty"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Score"
+        app:strokeColor="#616161"
+        app:strokeWidth="5dp" />
+
+    <Button
+        android:id="@+id/pin4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="185dp"
+        android:background="@drawable/pinstate"
+        android:text="@string/Empty"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Score"
+        app:strokeColor="#616161"
+        app:strokeWidth="5dp" />
+
+    <Button
+        android:id="@+id/pin2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/pinstate"
+        android:text="@string/Empty"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Score"
+        app:strokeColor="#616161"
+        app:strokeWidth="5dp" />
+
+    <Button
+        android:id="@+id/pin7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="310dp"
+        android:background="@drawable/pinstate"
+        android:text="@string/Empty"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Score"
+        app:strokeColor="#616161"
+        app:strokeWidth="5dp" />
+
+    <Button
+        android:id="@+id/pin8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="310dp"
+        android:background="@drawable/pinstate"
+        android:text="@string/Empty"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Score"
+        app:strokeColor="#616161"
+        app:strokeWidth="5dp" />
+
+    <Button
+        android:id="@+id/pin9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="310dp"
+        android:background="@drawable/pinstate"
+        android:text="@string/Empty"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Score"
+        app:strokeColor="#616161"
+        app:strokeWidth="5dp" />
+
+    <Button
+        android:id="@+id/pin10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginBottom="310dp"
+        android:background="@drawable/pinstate"
+        android:text="@string/Empty"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Score"
+        app:strokeColor="#616161"
+        app:strokeWidth="5dp" />
+
+    <Button
+        android:id="@+id/pin3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/pinstate"
+        android:text="@string/Empty"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Score"
+        app:strokeColor="#616161"
+        app:strokeWidth="5dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

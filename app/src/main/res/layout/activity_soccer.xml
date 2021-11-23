@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Soccer"
+    android:background="@drawable/gradientbackground">>
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="10:00"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_start_pause"
+        android:layout_width="234dp"
+        android:layout_height="66dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="timerClick"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view"
+        app:layout_constraintEnd_toEndOf="@+id/text_view"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/text_view"
+        app:layout_constraintTop_toTopOf="@+id/text_view"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/HalfText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="HALF"
+        android:textColor="#FF0000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view" />
+
+    <TextView
+        android:id="@+id/Team1Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="325dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/team1"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Team2Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="325dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/team2"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/t1Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/press_start_2p"
+        android:scaleY="1.5"
+        android:text="@string/team1scoreInitial"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FF0000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Team1Name" />
+
+    <TextView
+        android:id="@+id/t2Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/press_start_2p"
+        android:scaleY="1.5"
+        android:text="@string/team2scoreInitial"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Team2Name" />
+
+    <Button
+        android:id="@+id/t1_P"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#2EFD00"
+        android:onClick="tOneG"
+        android:text="GOAL"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1Score"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/t2_P"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#2EFD00"
+        android:onClick="tTwoG"
+        android:text="GOAL"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t2Score" />
+
+    <Button
+        android:id="@+id/Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#777777"
+        android:onClick="SettingsClick"
+        android:text="@string/settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sUndo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF0000"
+        android:onClick="Undo"
+        android:text="@string/undo"
+        app:layout_constraintBottom_toTopOf="@+id/Settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sNum" />
+
+    <Button
+        android:id="@+id/sNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/press_start_2p"
+        android:onClick="halNum"
+        android:text="@string/pNumInitial"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HalfText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

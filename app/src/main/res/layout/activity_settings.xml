@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="639dp"
+        android:backgroundTint="#D60000"
+        android:onClick="Back2HomeClick"
+        android:text="BACK TO HOME"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="548dp"
+        android:backgroundTint="#616161"
+        android:onClick="ChangeSportClick"
+        android:text="CHANGE SPORT"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="456dp"
+        android:backgroundTint="#616161"
+        android:text="TEAM 1 OPTIONS"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="365dp"
+        android:backgroundTint="#616161"
+        android:text="TEAM 2 OPTIONS"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="274dp"
+        android:backgroundTint="#616161"
+        android:text="LEAGUE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="182dp"
+        android:backgroundTint="#616161"
+        android:text="SAVE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="91dp"
+        android:backgroundTint="#616161"
+        android:text="LOAD"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="-10dp"
+        android:backgroundTint="#D60000"
+        android:text="RATE OUR APP"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="282dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#9A0000"
+        android:rotation="-11"
+        android:rotationX="-2"
+        android:rotationY="19"
+        android:text="COMING SOON"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="282dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#9A0000"
+        android:rotation="-11"
+        android:rotationX="-2"
+        android:rotationY="19"
+        android:text="COMING SOON"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button18" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="282dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#9A0000"
+        android:rotation="-11"
+        android:rotationX="-2"
+        android:rotationY="19"
+        android:text="COMING SOON"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button19" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="282dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#9A0000"
+        android:rotation="-11"
+        android:rotationX="-2"
+        android:rotationY="19"
+        android:text="COMING SOON"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button20" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="282dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#9A0000"
+        android:rotation="-11"
+        android:rotationX="-2"
+        android:rotationY="19"
+        android:text="COMING SOON"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button21" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="282dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#9A0000"
+        android:rotation="-11"
+        android:rotationX="-2"
+        android:rotationY="19"
+        android:text="COMING SOON"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button22" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
