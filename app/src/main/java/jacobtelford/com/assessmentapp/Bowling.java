@@ -9,7 +9,6 @@ import android.widget.Button;
 
 public class Bowling extends AppCompatActivity {
 
-    //incomplete activity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
